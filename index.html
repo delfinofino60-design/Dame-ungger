@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Swimming Duck 🦆</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      background: linear-gradient(#87CEEB, #1E90FF);
+      font-family: Arial, sans-serif;
+    }
+
+    .water {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 50%;
+      background: #1E90FF;
+      border-top-left-radius: 50% 20%;
+      border-top-right-radius: 50% 20%;
+    }
+
+    .duck {
+      position: absolute;
+      font-size: 50px;
+      animation: swim 8s linear infinite;
+    }
+
+    @keyframes swim {
+      0% {
+        left: -60px;
+        top: 60%;
+        transform: scaleX(1);
+      }
+      50% {
+        left: calc(100% - 60px);
+        top: 65%;
+        transform: scaleX(1);
+      }
+      51% {
+        transform: scaleX(-1);
+      }
+      100% {
+        left: -60px;
+        top: 60%;
+        transform: scaleX(-1);
+      }
+    }
+
+    h1 {
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      top: 20px;
+      color: white;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    }
+  </style>
+</head>
+<body>
+
+<h1>🌊 Cute Swimming Duck 🦆</h1>
+
+<div class="duck">🦆</div>
+<div class="water"></div>
+
+</body>
+</html>
